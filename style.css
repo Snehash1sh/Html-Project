@@ -1,5 +1,5 @@
 *{
-    background-color: rgb(218, 165, 165);
+    background-color: rgb(255, 255, 255);
 }
 h1{
   font-family: "Isometra", serif;
@@ -10,20 +10,133 @@ h1{
 
 #topbar{
     color: black;
-    border: 2px solid rgb(16, 164, 78);
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap:20px;
+    padding-right: 10px;
 }
 #navbar{
     display: flex;
     flex-direction: row;
     margin-left: 200px;
-    gap: 100px;
+    gap: 90px;
 }
 #logo{
     background-color:white ;
     border-radius: 100%;
     height: 50px;
     width: 50px;
+}
+.gg-search {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  border-radius: 100%;
+  margin-left: -4px;
+  margin-top: -4px;
+}
+.gg-search::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  width: 2px;
+  height: 8px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 12px;
+}
+.gg-shopping-cart {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  transform: scale(var(--ggs, 1));
+  width: 20px;
+  height: 21px;
+  background:
+    linear-gradient(to left, currentColor 12px, transparent 0) no-repeat -1px 6px/18px
+      2px,
+    linear-gradient(to left, currentColor 12px, transparent 0) no-repeat 6px
+      14px/11px 2px,
+    linear-gradient(to left, currentColor 12px, transparent 0) no-repeat 0 2px/4px
+      2px,
+    radial-gradient(circle, currentColor 60%, transparent 40%) no-repeat 12px
+      17px/4px 4px,
+    radial-gradient(circle, currentColor 60%, transparent 40%) no-repeat 6px
+      17px/4px 4px;
+}
+.gg-shopping-cart::after,
+.gg-shopping-cart::before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 2px;
+  height: 14px;
+  background: currentColor;
+  top: 2px;
+  left: 4px;
+  transform: skew(12deg);
+}
+.gg-shopping-cart::after {
+  height: 10px;
+  top: 6px;
+  left: 16px;
+  transform: skew(-12deg);
+}
+.gg-profile,
+.gg-profile::after,
+.gg-profile::before {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 100px;
+}
+.gg-profile {
+  overflow: hidden;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  position: relative;
+}
+.gg-profile::after,
+.gg-profile::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+}
+.gg-profile::after {
+  border-radius: 200px;
+  top: 11px;
+  left: 0px;
+  width: 18px;
+  height: 18px;
+}
+#profile{
+    background: repeating-radial-gradient();
+    height: 300px;
+    width: 450px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 2%;
+}
+.pfp{
+    background-color: #ba1616;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin: 20px;
+    border: 2px solid rgb(50, 23, 199);
 }
